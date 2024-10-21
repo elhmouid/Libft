@@ -6,13 +6,13 @@
 /*   By: moel-hmo <moel-hmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 21:39:18 by moel-hmo          #+#    #+#             */
-/*   Updated: 2024/10/21 21:54:31 by moel-hmo         ###   ########.fr       */
+/*   Updated: 2024/10/21 22:02:59 by moel-hmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 int ft_isprint(int c){
-    return(c <= 32 && c >= 127);
+    return(c >= 32 && c <= 127);
 }
 
 int main(){
