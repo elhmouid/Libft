@@ -6,7 +6,7 @@
 /*   By: moel-hmo <moel-hmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 00:17:15 by moel-hmo          #+#    #+#             */
-/*   Updated: 2024/10/22 00:56:09 by moel-hmo         ###   ########.fr       */
+/*   Updated: 2024/10/22 01:24:21 by moel-hmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,10 @@ int ft_atoi(const char *str){
     while (str[i] >= '0' && str[i] <= '9')
     {
         ra9m = ra9m * 10 + (str[i] - 48);
+        if (ra9m > 9223372036854775807ULL && ichara == 1)
+			return (-1);
+		if (ra9m > 9223372036854775807ULL && ichara == -1)
+			return (0);
         i++;
     }
     return ra9m * ichara;
