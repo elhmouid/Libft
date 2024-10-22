@@ -6,13 +6,15 @@
 /*   By: moel-hmo <moel-hmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 22:46:16 by moel-hmo          #+#    #+#             */
-/*   Updated: 2024/10/22 21:29:15 by moel-hmo         ###   ########.fr       */
+/*   Updated: 2024/10/22 22:32:03 by moel-hmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
 size_t  ft_strlcpy(char * restrict dst, const char * restrict src, size_t dstsize){
+    if (dst == NULL || src == NULL)
+        return (0);
     size_t  i;
     size_t  j;
 
