@@ -6,17 +6,17 @@
 /*   By: moel-hmo <moel-hmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 15:47:08 by moel-hmo          #+#    #+#             */
-/*   Updated: 2024/10/21 21:42:38 by moel-hmo         ###   ########.fr       */
+/*   Updated: 2024/10/23 00:14:35 by moel-hmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include "libft.h"
 
 int ft_isascii(int c){
      return(c >= 0 && c <= 127);
 }
 
-int main()
-{
-    printf("=====>%d\n", ft_isascii(500));
-}
+// int main()
+// {
+//     printf("=====>%d\n", ft_isascii(500));
+// }

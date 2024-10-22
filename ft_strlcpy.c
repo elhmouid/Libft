@@ -6,11 +6,11 @@
 /*   By: moel-hmo <moel-hmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 22:46:16 by moel-hmo          #+#    #+#             */
-/*   Updated: 2024/10/22 22:32:03 by moel-hmo         ###   ########.fr       */
+/*   Updated: 2024/10/23 00:14:50 by moel-hmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 size_t  ft_strlcpy(char * restrict dst, const char * restrict src, size_t dstsize){
     if (dst == NULL || src == NULL)
@@ -30,13 +30,13 @@ size_t  ft_strlcpy(char * restrict dst, const char * restrict src, size_t dstsiz
         dst[i] = src[i];
         i++;
     }
-    dst[i] = ('\0');
+    dst[i] = '\0';
     return (j);
 }
 
-int main()
-{
-    char dst[9];
-    printf("the lenght 0f src : %zu\n", ft_strlcpy(dst, "elhmouidmohamed", sizeof(dst)));
-    printf("dest : %s", dst);
-}
+// int main()
+// {
+//     char dst[9];
+//     printf("the lenght 0f src : %zu\n", strlcpy(dst, NULL, sizeof(dst)));
+//     printf("dest : %s", dst);
+// }

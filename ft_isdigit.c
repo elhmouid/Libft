@@ -6,18 +6,18 @@
 /*   By: moel-hmo <moel-hmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 12:21:03 by moel-hmo          #+#    #+#             */
-/*   Updated: 2024/10/21 12:32:37 by moel-hmo         ###   ########.fr       */
+/*   Updated: 2024/10/23 00:14:39 by moel-hmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int ft_isdigit(int c)
 {
     return (c >= '0' && c <= '9');
 }
 
-int main()
-{
-    printf("=========>%d\n", ft_isdigit('a'));
-}
+// int main()
+// {
+//     printf("=========>%d\n", ft_isdigit('a'));
+// }

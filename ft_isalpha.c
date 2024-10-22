@@ -6,19 +6,18 @@
 /*   By: moel-hmo <moel-hmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 11:54:04 by moel-hmo          #+#    #+#             */
-/*   Updated: 2024/10/21 12:20:47 by moel-hmo         ###   ########.fr       */
+/*   Updated: 2024/10/23 00:14:32 by moel-hmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdbool.h>
+#include "libft.h"
 
 int ft_isalpha(int c)
 {
     return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
 
-int main()
-{
-    printf("------> %d\n", ft_isalpha('-'));
-}
+// int main()
+// {
+//     printf("------> %d\n", ft_isalpha('-'));
+// }

@@ -6,11 +6,11 @@
 /*   By: moel-hmo <moel-hmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 00:17:15 by moel-hmo          #+#    #+#             */
-/*   Updated: 2024/10/22 01:24:21 by moel-hmo         ###   ########.fr       */
+/*   Updated: 2024/10/23 00:15:58 by moel-hmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int ft_atoi(const char *str){
     int i;
@@ -42,10 +42,10 @@ int ft_atoi(const char *str){
 
 }
 
-int main()
-{
-    printf("%d\n", "  1234", ft_atoi("  1234"));
-    printf("%d\n", "  -1234", ft_atoi("  -1234"));
-    printf("%d\n", "  +1234", ft_atoi("  +1234"));
+// int ()
+// {
+//     printf("%d\n", ft_atoi("  1234"));
+//     printf("%d\n", ft_atoi("  -1234"));
+//     printf("%d\n", ft_atoi("  +1234"));
     
-}
+// }
