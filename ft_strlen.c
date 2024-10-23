@@ -6,7 +6,7 @@
 /*   By: moel-hmo <moel-hmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 22:07:18 by moel-hmo          #+#    #+#             */
-/*   Updated: 2024/10/23 00:16:34 by moel-hmo         ###   ########.fr       */
+/*   Updated: 2024/10/23 00:32:45 by moel-hmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ size_t  ft_strlen(const char *s)
     size_t  i;
 
     i = 0;
-    if (s == NULL)
     while(s[i])
         i++;
     return (i);
