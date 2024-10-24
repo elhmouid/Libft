@@ -17,7 +17,7 @@ int ft_isalnum(int c)
     return (ft_isalpha(c) || ft_isdigit(c));
 }
 
-int main()
-{
-    printf("=========>%d\n", ft_isalnum('f'));
-}
+// int main()
+// {
+//     printf("=========>%d\n", ft_isalnum('f'));
+// }

@@ -1,37 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-hmo <moel-hmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 16:37:40 by moel-hmo          #+#    #+#             */
-/*   Updated: 2024/10/24 04:14:01 by moel-hmo         ###   ########.fr       */
+/*   Created: 2024/10/24 03:18:39 by moel-hmo          #+#    #+#             */
+/*   Updated: 2024/10/24 04:14:40 by moel-hmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
+#include <stdio.h>
 
-void	ft_putnbr_fd(int n, int fd)
+char	*ft_strchr(const char *s, int c)
 {
-	long nb = (long )n;
-	
-	if (nb < 0)
+	int i;
+	char *ptr;
+
+	i = 0;
+	ptr = (char *)s;
+	while (ptr[i])
 	{
-		ft_putchar_fd('-', fd);
-		nb = -nb;
+		if (ptr[i] == c)
+			return (&ptr[i]);
+		i++;
 	}
-	if (nb > 9)
-	{
-		ft_putnbr_fd(nb / 10, fd);
-	}
-	ft_putchar_fd((nb % 10) + 48, fd);
+	return (NULL);
 }
 
 // int main()
 // {
-// 	int fd = open("file", O_CREAT | O_RDWR | O_APPEND, 0644);
-// 	printf("fd : %d\n", fd);
-// 	ft_putchar_fd('\n', fd);
-// 	ft_putnbr_fd(123, fd);
+// 	printf("%s\n", ft_strchr("hmo™™™™™™uid hhhh", 'm'));
 // }
